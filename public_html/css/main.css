@@ -1,0 +1,46 @@
+
+#github-me {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+}
+
+#input-value {
+    margin-top: 50px;
+}
+
+#render-button {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 45px;
+    padding-right: 60px;
+}
+
+.navbar>.container-fluid .navbar-brand{
+    background: url(../img/arrayscope.png) no-repeat;
+    background-size: 50px, 50px;
+    padding-left: 60px;
+    margin-left: 0;
+}
+
+.static-footer {
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+
+.std-margin {
+    margin: 15px;
+}
+
+
+/* highlight */
+pre {outline: 1px solid #ccc; padding: 5px; margin: 5px; }
+.string { color: green; }
+.number { color: darkorange; }
+.boolean { color: blue; }
+.null { color: magenta; }
+.key { color: red; }
+
+
