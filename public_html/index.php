@@ -13,6 +13,9 @@
     <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
+    <!-- Bootstrap patch -->
+    <link rel="stylesheet" href="./css/fix_submenu_shit.css">
+
     <script src="./js/main.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
 </head>
@@ -30,11 +33,32 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Examples<span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Json</a></li>
-                        <li><a href="#">PHP</a></li>
-                        <li><a href="#">PHP -> var_dump</a></li>
-                        <li><a href="#">Python</a></li>
-                        <li><a href="#">Python -> pprint</a></li>
+
+                        <!-- JS -->
+                        <li class="dropdown-submenu"><a href="#">JavaScript</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">pure</a></li>
+                                <li><a href="#">with variable</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- PHP -->
+                        <li class="dropdown-submenu"><a href="#">PHP</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">pure</a></li>
+                                <li><a href="#">var_dump</a></li>
+                                <li><a href="#">print_r</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Python -->
+                        <li class="dropdown-submenu"><a href="#">Python</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">pure</a></li>
+                                <li><a href="#">pprint</a></li>
+                            </ul>
+                        </li>
+
                     </ul>
                 </li>
             </ul>
@@ -65,36 +89,19 @@
                         <li><a onclick="all_set_border()" >Borders</a></li>
                     </ul>
                 </li>
-
             </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+        </div>
+
+    </div>
 </nav>
 
 <!-- main input code -->
 <div class="container-fluid">
     <div class="col-md-offset-2 col-md-8">
         <form onsubmit="work_on_input(this); return false;" role="form">
-<!--            <div class="form-group">-->
                 <textarea id="input-value" class="form-control" cols="80" rows="20">
-{
-    "users" : {
-        "paul" : {
-            "eye" : "brawn",
-            "height" : 178
-        },
-        "alex" : {
-            "eye" : "green",
-            "height" : 180
-        },
-        "petr" : {
-            "eye" : "blue",
-            "height":175
-        }
-    }
-}
+{"users":{"paul":{"eye":"brawn","height":178},"alex":{"eye":"green","height":180},"petr":{"eye":"blue","height":175}}}
                 </textarea>
-<!--            </div>-->
             <button type="submit" id="render-button" class="glyphicon glyphicon-eye-open btn btn-primary btn-lg center-block">
                 View
             </button>

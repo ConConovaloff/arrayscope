@@ -34,6 +34,19 @@
     margin: 15px;
 }
 
+.object-name {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.object-values {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border: solid 1px
+}
+
 
 /* highlight */
 pre {outline: 1px solid #ccc; padding: 5px; margin: 5px; }
