@@ -17,6 +17,12 @@
     padding-right: 60px;
 }
 
+#logger {
+    position: absolute;
+    right: 0;
+    top: 100px;
+}
+
 .navbar>.container-fluid .navbar-brand{
     background: url(../img/arrayscope.png) no-repeat;
     background-size: 50px, 50px;

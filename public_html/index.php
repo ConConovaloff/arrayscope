@@ -16,8 +16,9 @@
     <!-- Bootstrap patch -->
     <link rel="stylesheet" href="./css/fix_submenu_shit.css">
 
-    <script src="./js/main.js"></script>
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <!-- our code -->
+    <script src="./js/main.js?<?php print time();?>"></script>
+    <link rel="stylesheet" type="text/css" href="./css/main.css?<?php print time();?>">
 </head>
 <body>
 
@@ -32,30 +33,30 @@
             <ul class="nav navbar-nav">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Examples<span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
+                    <ul class="dropdown-menu" onclick="show_example(this); return false" role="menu">
 
                         <!-- JS -->
                         <li class="dropdown-submenu"><a href="#">JavaScript</a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">pure</a></li>
-                                <li><a href="#">with variable</a></li>
+                                <li><a href="#" id="js-pure">json</a></li>
+                                <li><a href="#" id="js-var">with variable</a></li>
                             </ul>
                         </li>
 
                         <!-- PHP -->
                         <li class="dropdown-submenu"><a href="#">PHP</a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">pure</a></li>
-                                <li><a href="#">var_dump</a></li>
-                                <li><a href="#">print_r</a></li>
+                                <li><a href="#" id="php-pure">pure</a></li>
+                                <li><a href="#" id="php-vardump">var_dump</a></li>
+                                <li><a href="#" id="php-printr">print_r</a></li>
                             </ul>
                         </li>
 
                         <!-- Python -->
                         <li class="dropdown-submenu"><a href="#">Python</a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">pure</a></li>
-                                <li><a href="#">pprint</a></li>
+                                <li><a href="#" id="py-pure">pure</a></li>
+                                <li><a href="#" id="py-pprint">pprint</a></li>
                             </ul>
                         </li>
 
@@ -107,6 +108,12 @@
             </button>
         </form>
     </div>
+</div>
+
+
+<!-- right absolute logger -->
+<!--<div class="col-md-2 text-danger" id="logger">-->
+<div id="logger">
 </div>
 
 
