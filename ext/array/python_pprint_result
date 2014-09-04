@@ -1,0 +1,15 @@
+
+{'queryId': 112656,
+ 'status': 'success',
+ 'users': {'alex': {'email': '',
+                    'eye': 'green',
+                    'height': 180,
+                    'phones': ['555-5555']},
+           'paul': {'email': 'some@some.com',
+                    'eye': 'brawn',
+                    'height': 178,
+                    'phones': ['555-5551', '555-5552', '555-5553']},
+           'petr': {'email': None,
+                    'eye': 'blue',
+                    'height': 175,
+                    'phones': []}}}

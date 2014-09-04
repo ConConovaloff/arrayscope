@@ -1,0 +1,2 @@
+
+'{"status": "success", "queryId": 112656, "users": {"paul": {"phones": ["555-5551", "555-5552", "555-5553"], "eye": "brawn", "email": "some@some.com", "height": 178}, "alex": {"phones": ["555-5555"], "eye": "green", "email": "", "height": 180}, "petr": {"phones": [], "eye": "blue", "email": null, "height": 175}}}'

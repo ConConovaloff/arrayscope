@@ -39,14 +39,12 @@
                         <li class="dropdown-submenu"><a href="#">JavaScript</a>
                             <ul class="dropdown-menu">
                                 <li><a href="#" id="js-pure">json</a></li>
-                                <li><a href="#" id="js-var">with variable</a></li>
                             </ul>
                         </li>
 
                         <!-- PHP -->
                         <li class="dropdown-submenu"><a href="#">PHP</a>
                             <ul class="dropdown-menu">
-                                <li><a href="#" id="php-pure">pure</a></li>
                                 <li><a href="#" id="php-vardump">var_dump</a></li>
                                 <li><a href="#" id="php-printr">print_r</a></li>
                             </ul>
@@ -55,7 +53,6 @@
                         <!-- Python -->
                         <li class="dropdown-submenu"><a href="#">Python</a>
                             <ul class="dropdown-menu">
-                                <li><a href="#" id="py-pure">pure</a></li>
                                 <li><a href="#" id="py-pprint">pprint</a></li>
                             </ul>
                         </li>
@@ -132,6 +129,126 @@
     <img id="github-me" src="./img/github_me_ribbon.png" alt="Fork me on GitHub">
 </a>
 
+<!-- JS templates -->
+<script id="template-php-vardump" type="text/template">array(3) {
+  ["users"]=>
+  array(3) {
+    ["paul"]=>
+    array(4) {
+      ["eye"]=>
+      string(5) "brawn"
+      ["height"]=>
+      int(178)
+      ["email"]=>
+      string(13) "some@some.com"
+      ["phones"]=>
+      array(3) {
+        [0]=>
+        string(8) "555-5551"
+        [1]=>
+        string(8) "555-5552"
+        [2]=>
+        string(8) "555-5553"
+      }
+    }
+    ["alex"]=>
+    array(4) {
+      ["eye"]=>
+      string(5) "green"
+      ["height"]=>
+      int(180)
+      ["email"]=>
+      string(0) ""
+      ["phones"]=>
+      array(1) {
+        [0]=>
+        string(8) "555-5555"
+      }
+    }
+    ["petr"]=>
+    array(4) {
+      ["eye"]=>
+      string(4) "blue"
+      ["height"]=>
+      int(175)
+      ["email"]=>
+      NULL
+      ["phones"]=>
+      array(0) {
+      }
+    }
+  }
+  ["status"]=>
+  string(7) "success"
+  ["queryId"]=>
+  int(112656)
+}</script>
+
+<script id="template-php-printr" type="text/template">Array
+(
+    [users] => Array
+        (
+            [paul] => Array
+                (
+                    [eye] => brawn
+                    [height] => 178
+                    [email] => some@some,com
+                    [phones] => Array
+                        (
+                            [0] => 555-5551
+                            [1] => 555-5552
+                            [2] => 555-5553
+                        )
+
+                )
+
+            [alex] => Array
+                (
+                    [eye] => green
+                    [height] => 180
+                    [email] =>
+                    [phones] => Array
+                        (
+                            [0] => 555-5555
+                        )
+
+                )
+
+            [petr] => Array
+                (
+                    [eye] => blue
+                    [height] => 175
+                    [email] =>
+                    [phones] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [status] => success
+    [queryId] => 112656
+)</script>
+
+<script id="template-python-pprintr" type="text/template">{'queryId': 112656,
+ 'status': 'success',
+ 'users': {'alex': {'email': '',
+                    'eye': 'green',
+                    'height': 180,
+                    'phones': ['555-5555']},
+           'paul': {'email': 'some@some.com',
+                    'eye': 'brawn',
+                    'height': 178,
+                    'phones': ['555-5551', '555-5552', '555-5553']},
+           'petr': {'email': None,
+                    'eye': 'blue',
+                    'height': 175,
+                    'phones': []}}}</script>
+
+
+<script id="template-empty" type="text/template">
+</script>
 
 </body>
 </html>

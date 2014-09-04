@@ -142,12 +142,9 @@ function show_example(elemenent) {
             '"paul":{"eye":"brawn","height":178},' +
             '"alex":{"eye":"green","height":180},' +
             '"petr":{"eye":"blue","height":175}}}',
-        'js-var': 'not ready yet',
-        'php-pure': 'not ready yet',
-        'php-vardump': 'not ready yet',
-        'php-printr': 'not ready yet',
-        'py-pure': 'not ready yet',
-        'py-pprint': 'not ready yet'
+        'php-vardump': $('#template-php-vardump').html(),
+        'php-printr': $('#template-php-printr').html(),
+        'py-pprint': $('#template-python-pprintr').html()
     };
 
     if (event.target.id in examples) {
